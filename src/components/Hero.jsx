@@ -27,31 +27,31 @@ function StackIllustration() {
 
       <circle cx="210" cy="195" r="180" fill="url(#glow)" />
 
-      {/* orbit ring */}
+      {}
       <ellipse cx="210" cy="230" rx="150" ry="34" fill="none" stroke="url(#ring)" strokeWidth="2" opacity="0.35" />
 
-      {/* layer 3 (bottom) */}
+      {}
       <g transform="translate(0,58)">
         <polygon points="210,150 300,190 210,230 120,190" fill="url(#topFace)" opacity="0.55" />
         <polygon points="120,190 210,230 210,250 120,210" fill="url(#leftFace)" opacity="0.55" />
         <polygon points="300,190 210,230 210,250 300,210" fill="url(#rightFace)" opacity="0.55" />
       </g>
 
-      {/* layer 2 (middle) */}
+      {}
       <g transform="translate(0,24)">
         <polygon points="210,120 300,160 210,200 120,160" fill="url(#topFace)" opacity="0.78" />
         <polygon points="120,160 210,200 210,220 120,180" fill="url(#leftFace)" opacity="0.78" />
         <polygon points="300,160 210,200 210,220 300,180" fill="url(#rightFace)" opacity="0.78" />
       </g>
 
-      {/* layer 1 (top) */}
+      {}
       <g>
         <polygon points="210,90 300,130 210,170 120,130" fill="url(#topFace)" />
         <polygon points="120,130 210,170 210,190 120,150" fill="url(#leftFace)" />
         <polygon points="300,130 210,170 210,190 300,150" fill="url(#rightFace)" />
       </g>
 
-      {/* small floating chips */}
+      {}
       <g opacity="0.9">
         <rect x="52" y="150" width="30" height="30" rx="8" fill="#fff" stroke="#e8e5f0" />
         <text x="67" y="170" textAnchor="middle" fontFamily="Sora, sans-serif" fontSize="13" fontWeight="700" fill="#2f6fed">JS</text>

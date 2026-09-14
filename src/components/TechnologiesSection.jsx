@@ -11,8 +11,7 @@ export default function TechnologiesSection() {
   useEffect(() => {
     let cancelled = false
 
-    // Data lives in /public/technologies.json and is fetched at runtime
-    // rather than imported/hardcoded into the component.
+  
     fetch('/technologies.json')
       .then((res) => {
         if (!res.ok) throw new Error('Failed to load technologies')
@@ -27,7 +26,7 @@ export default function TechnologiesSection() {
       })
       .finally(() => {
         if (cancelled) return
-        // brief, deliberate minimum so the loading state is demonstrable
+       
         setTimeout(() => setLoading(false), 350)
       })
 
